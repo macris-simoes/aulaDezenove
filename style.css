@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.header{
+    background-color: aqua;
+    padding: 10px;
+    margin: 5px;
+    font-size: 24px;
+}
+body{
+    border:blue 2px solid;
+    margin: 5px;
+}
+.nav{
+    background-color: lightgreen;
+    padding: 10px;
+}
+.main{
+    display: flex;
+}
+.article{
+    background-color: lightseagreen;
+    margin: 5px;
+    padding: 5px;
+    width: 60%;
+}
+.section{
+    background-color: orange;
+    margin: 10px;
+    padding: 5px;
+}
+.aside{
+    background-color: orchid;
+    margin: 5px;
+    padding: 5px;
+    width: 40%;
+}
+.footer{
+    background-color: aqua;
+    padding: 10px;
+    margin: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+    .main {
+        flex-direction: column;
+        /* display: block; */
+    }
+    .article{
+        width: 98%;
+    }
+    .aside{
+        width: 98%;
+    }
+
+  }
